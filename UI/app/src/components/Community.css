@@ -1,0 +1,67 @@
+
+.community-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+.community-content h2 {
+  font-size: 48px;
+  line-height: 1.2;
+  margin-bottom: 24px;
+  color: white;
+  font-weight: 700;
+}
+
+.community-content p {
+  color: #9ca3af;
+  margin-bottom: 32px;
+  max-width: 400px;
+}
+
+.community-image {
+  flex: 1;
+  position: relative;
+}
+
+.wave-placeholder {
+  width: 100%;
+  height: 400px;
+  background: linear-gradient(135deg, #3b82f6, #06b6d4);
+  border-radius: 30px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 0 50px rgba(59, 130, 246, 0.3);
+}
+
+.wave-placeholder::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: repeating-linear-gradient(
+    45deg,
+    rgba(255,255,255,0.05),
+    rgba(255,255,255,0.05) 10px,
+    transparent 10px,
+    transparent 20px
+  );
+}
+
+/* Glow effect behind image */
+.community-image::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  height: 80%;
+  background: #3b82f6;
+  filter: blur(80px);
+  z-index: -1;
+  opacity: 0.4;
+}

@@ -1,0 +1,133 @@
+
+.gallery-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.gallery-header h2 {
+  font-size: 40px;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  color: #9ca3af;
+  max-width: 400px;
+}
+
+.filter-tabs {
+  display: flex;
+  gap: 12px;
+}
+
+.tab {
+  background: transparent;
+  color: #9ca3af;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: all 0.2s;
+  border: 1px solid transparent; /* Prevent layout shift */
+}
+
+.tab:hover {
+  color: white;
+}
+
+.tab.active {
+  background: rgba(168, 85, 247, 0.1);
+  color: #a855f7;
+  border: 1px solid rgba(168, 85, 247, 0.2);
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  margin-bottom: 60px;
+}
+
+.gallery-item {
+  background: rgba(255, 255, 255, 0.03); /* Dark card bg */
+  padding: 16px;
+  border-radius: 20px;
+  transition: transform 0.2s;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.gallery-item:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.07);
+}
+
+.gallery-image-placeholder {
+  width: 100%;
+  height: 350px; /* Taller images */
+  border-radius: 16px;
+  margin-bottom: 16px;
+  opacity: 0.9;
+}
+
+.gallery-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.gallery-info h4 {
+  font-weight: 700;
+  font-size: 18px;
+  color: white;
+  margin-bottom: 4px;
+}
+
+.item-creator {
+  font-size: 13px;
+  color: #9ca3af;
+}
+
+.price-tag {
+  color: #a855f7; /* Neon purple */
+  font-weight: 700;
+  background: rgba(168, 85, 247, 0.1);
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+/* Remove old p color rule */
+.gallery-info p.item-creator {
+  color: #9ca3af; 
+}
+
+.load-more-container {
+  text-align: center;
+}
+
+.btn-outline-sm {
+  padding: 10px 24px;
+  border: 1px solid #e5e7eb;
+  background: white;
+  border-radius: 99px;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.btn-outline-sm:hover {
+  border-color: #000;
+  background: #f9fafb;
+}
+
+/* Make grid uneven for masonry feel */
+.item-2 {
+   margin-top: 60px;
+}
+
+.item-4 {
+    margin-top: 60px;
+ }
